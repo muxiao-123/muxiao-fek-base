@@ -11,15 +11,22 @@
         "!.next/cache/**"
       ]
     },
-    "dev": {
-      "cache": false,
-      "persistent": true
+    "test": {
+      "dependsOn": ["build"],
+      "outputs": []
+    },
+    "typecheck": {
+      "dependsOn": ["^build"]
     },
     "lint": {
       "dependsOn": ["^build"]
     },
     "format": {
       "cache": false
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
     },
     "clean": {
       "cache": false

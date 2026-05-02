@@ -1,6 +1,10 @@
 {
   "name": "@muxiao-fek-base/skills",
   "version": "1.0.0",
-  "private": true,
-  "description": "AI Editor Skills rules for muxiao-fek-base monorepo"
+  "private": false,
+  "description": "AI Editor Skills rules for muxiao-fek-base monorepo",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }
