@@ -1,0 +1,9 @@
+node_modules
+.turbo
+dist
+dist-electron
+.vitepress/dist
+*.local
+.DS_Store
+*.log
+pnpm-debug.log*

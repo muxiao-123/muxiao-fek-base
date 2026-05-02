@@ -1,0 +1,21 @@
+{
+  "name": "@muxiao-fek-base/miniapp",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "lint": "oxlint src"
+  },
+  "dependencies": {
+    "@muxiao-fek-base/request": "workspace:*",
+    "@muxiao-fek-base/i18n": "workspace:*",
+    "@muxiao-fek-base/utils": "workspace:*"
+  },
+  "devDependencies": {
+    "vite": "^8.0.0",
+    "typescript": "^6.0.0"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "@muxiao-fek-base/vue3-app",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "lint": "oxlint src"
+  },
+  "dependencies": {
+    "vue": "^3.4.0",
+    "@muxiao-fek-base/ui": "workspace:*",
+    "@muxiao-fek-base/request": "workspace:*",
+    "@muxiao-fek-base/i18n": "workspace:*",
+    "@muxiao-fek-base/utils": "workspace:*"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.0",
+    "vite": "^8.0.0",
+    "vue-tsc": "^2.0.0",
+    "typescript": "^6.0.0"
+  }
+}

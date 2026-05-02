@@ -1,0 +1,12 @@
+{
+  "name": "@muxiao-fek-base/tsconfig",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./tsconfig.base.json": "./tsconfig.base.json"
+  },
+  "files": [
+    "tsconfig.base.json"
+  ]
+}

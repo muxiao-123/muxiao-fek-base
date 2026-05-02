@@ -1,0 +1,23 @@
+{
+  "name": "@muxiao-fek-base/ui",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./styles/variables.css": "./dist/styles/variables.css",
+    "./styles/components.css": "./dist/styles/components.css"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc && node -e \"const fs=require('fs');const p=require('path');['variables.css','components.css'].forEach(f=>{const src=p.join('src/styles',f);const dst=p.join('dist/styles',f);if(fs.existsSync(src)){fs.mkdirSync(p.dirname(dst),{recursive:true});fs.copyFileSync(src,dst);}})\""
+  },
+  "peerDependencies": {
+    "vue": "^3.4.0"
+  }
+}

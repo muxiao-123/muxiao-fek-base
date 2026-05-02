@@ -1,0 +1,22 @@
+{
+  "name": "@muxiao-fek-base/request",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@muxiao-fek-base/types": "workspace:*",
+    "axios": "^1.7.0"
+  }
+}
